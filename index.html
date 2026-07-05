@@ -7,6 +7,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 <style>
   :root{
     --bg:#0a0908;
@@ -330,12 +332,20 @@
   .pill{
     font-family:var(--mono);
     font-size:12px;
-    padding:7px 12px;
+    padding:7px 13px;
     border:1px solid var(--line);
     border-radius:20px;
     color:var(--text);
     background:var(--bg-panel-2);
     transition:all .2s;
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+  }
+  .pill .mdi{
+    font-size:15px;
+    color:var(--red-bright);
+    transition:color .2s;
   }
   .pill:hover{
     border-color:var(--red);
@@ -426,7 +436,7 @@
     <div>
       <div class="eyebrow">Desarrollando software desde Panamá para el mundo</div>
       <h1 class="hero-title">Christian Terrones<br><span>alias CAT-J</span></h1>
-      <p class="hero-sub">Desarrollador Full-Stack con 6 años de experiencia construyendo soluciones web para logística, gobierno y administración — desde la base de datos hasta la interfaz.</p>
+      <p class="hero-sub">Desarrollador Full-Stack con 4 años de experiencia construyendo soluciones web para logística, gobierno y administración — desde la base de datos hasta la interfaz.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://1drv.ms/b/c/0abb35e51072064a/IQBKBnIQ5TW7IIAKhxQAAAAAAQjArbXjTrjPe3rtPJTdrUo?e=YEUjSz">↓ Ver CV</a>
         <a class="btn btn-ghost" href="#contact">Contactar</a>
@@ -500,40 +510,40 @@
       <div class="stack-card reveal">
         <div class="cmd"><span class="p">$</span> ls lenguajes/</div>
         <div class="pill-row">
-          <span class="pill">JavaScript</span>
-          <span class="pill">C#</span>
-          <span class="pill">PHP</span>
-          <span class="pill">HTML5</span>
-          <span class="pill">CSS3</span>
-          <span class="pill">T-SQL</span>
+          <span class="pill"><span class="mdi mdi-language-javascript"></span>JavaScript</span>
+          <span class="pill"><span class="mdi mdi-language-csharp"></span>C#</span>
+          <span class="pill"><span class="mdi mdi-language-php"></span>PHP</span>
+          <span class="pill"><span class="mdi mdi-language-html5"></span>HTML5</span>
+          <span class="pill"><span class="mdi mdi-language-css3"></span>CSS3</span>
+          <span class="pill"><span class="mdi mdi-database-search"></span>T-SQL</span>
         </div>
       </div>
       <div class="stack-card reveal">
         <div class="cmd"><span class="p">$</span> ls bases-de-datos/</div>
         <div class="pill-row">
-          <span class="pill">MySQL</span>
-          <span class="pill">MariaDB</span>
-          <span class="pill">MongoDB</span>
-          <span class="pill">SAP HANA (B1)</span>
+          <span class="pill"><span class="mdi mdi-database"></span>MySQL</span>
+          <span class="pill"><span class="mdi mdi-database-outline"></span>MariaDB</span>
+          <span class="pill"><span class="mdi mdi-database-marker-outline"></span>MongoDB</span>
+          <span class="pill"><span class="mdi mdi-database-lock-outline"></span>SAP HANA (B1)</span>
         </div>
       </div>
       <div class="stack-card reveal">
         <div class="cmd"><span class="p">$</span> ls frameworks/</div>
         <div class="pill-row">
-          <span class="pill">ASP.NET</span>
-          <span class="pill">Laravel</span>
-          <span class="pill">Vue.js</span>
-          <span class="pill">Vuetify</span>
-          <span class="pill">Node.js</span>
+          <span class="pill"><span class="mdi mdi-microsoft"></span>ASP.NET</span>
+          <span class="pill"><span class="mdi mdi-laravel"></span>Laravel</span>
+          <span class="pill"><span class="mdi mdi-vuejs"></span>Vue.js</span>
+          <span class="pill"><span class="mdi mdi-vuetify"></span>Vuetify</span>
+          <span class="pill"><span class="mdi mdi-nodejs"></span>Node.js</span>
         </div>
       </div>
       <div class="stack-card reveal">
         <div class="cmd"><span class="p">$</span> ls infraestructura/</div>
         <div class="pill-row">
-          <span class="pill">Azure</span>
-          <span class="pill">Servidor IIS</span>
-          <span class="pill">Certificados SSL</span>
-          <span class="pill">Apache NiFi</span>
+          <span class="pill"><span class="mdi mdi-microsoft-azure"></span>Azure</span>
+          <span class="pill"><span class="mdi mdi-server-network"></span>Servidor IIS</span>
+          <span class="pill"><span class="mdi mdi-shield-lock-outline"></span>Certificados SSL</span>
+          <span class="pill"><span class="mdi mdi-transit-connection-variant"></span>Apache NiFi</span>
         </div>
       </div>
     </div>
