@@ -413,6 +413,24 @@
     *{animation:none !important; transition:none !important;}
     html{scroll-behavior:auto;}
   }
+  /* PROYECTOS */
+  .project{background:var(--bg-panel); border:1px solid var(--line); border-radius:6px; padding:30px; transition:border-color .2s;}
+  .project:hover{border-color:var(--red-deep);}
+  .project-top{display:flex; align-items:baseline; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:10px;}
+  .project h3{font-family:var(--body); font-size:20px; font-weight:600;}
+  .project .path{font-family:var(--mono); font-size:12px; color:var(--red-bright);}
+  .project p{color:var(--text-muted); font-size:14.5px; margin-bottom:14px; max-width:760px;}
+  .project p strong{color:var(--text); font-weight:600;}
+  .project-list{list-style:none; margin:0 0 18px;}
+  .project-list li{display:flex; gap:12px; font-size:14px; color:var(--text-muted); padding:3px 0;}
+  .project-list li::before{content:'\203A'; color:var(--red-bright); font-family:var(--mono);}
+  .project .pill-row{margin:16px 0 20px;}
+  .shots{display:flex; gap:12px; overflow-x:auto; padding:4px 2px 14px; margin-bottom:6px;}
+  .shots figure{margin:0; flex:0 0 auto; text-align:center;}
+  .shots img{display:block; width:112px; height:auto; border-radius:8px; border:1px solid var(--line); box-shadow:0 6px 18px rgba(0,0,0,0.5); transition:border-color .2s, transform .2s;}
+  .shots a:hover img{border-color:var(--red); transform:translateY(-2px);}
+  .shots figcaption{font-family:var(--mono); font-size:11px; color:var(--text-muted); margin-top:6px;}
+  .project-links{display:flex; gap:12px; flex-wrap:wrap;}
 </style>
 </head>
 <body>
@@ -423,10 +441,11 @@
   <div class="container">
     <div class="logo"><span class="dot"></span>CAT-J</div>
     <div class="navlinks">
-      <a href="#about"><span class="num">01.</span> Sobre mí</a>
-      <a href="#stack"><span class="num">02.</span> Stack</a>
+      <a href="#projects"><span class="num">01.</span> Proyectos</a>
+      <a href="#about"><span class="num">02.</span> Sobre mí</a>
       <a href="#sectors"><span class="num">03.</span> Sectores</a>
-      <a href="#contact"><span class="num">04.</span> Contacto</a>
+      <a href="#stack"><span class="num">04.</span> Stack</a>
+      <a href="#contact"><span class="num">05.</span> Contacto</a>
     </div>
   </div>
 </nav>
@@ -448,10 +467,51 @@
   </div>
 </header>
 
-<section id="about">
+<section id="projects">
   <div class="container">
     <div class="section-head">
       <span class="section-num">01</span>
+      <h2>Proyectos</h2>
+      <div class="rule"></div>
+    </div>
+
+    <article class="project reveal">
+      <div class="project-top">
+        <h3>SGFP · Sistema de Gestión Financiera Personal</h3>
+        <span class="path">~/proyectos/sgfp</span>
+      </div>
+      <p>Aplicación de finanzas personales para <strong>Windows y Android</strong>: cuentas de ahorro, movimientos, deudas (lo que debo, lo que presté y adelantos), metas y alertas de gasto, con gráficas que muestran en qué se va el dinero.</p>
+      <ul class="project-list">
+        <li>Misma lógica en escritorio y celular, con sincronización entre dispositivos por WiFi y por Google Drive.</li>
+        <li>Copias de seguridad con verificación de integridad antes de fusionar los cambios.</li>
+        <li>Límites de gasto y tope general de tarjeta con avisos antes de pasarse.</li>
+      </ul>
+      <div class="pill-row">
+        <span class="pill"><span class="mdi mdi-language-javascript"></span>JavaScript</span>
+        <span class="pill"><span class="mdi mdi-desktop-classic"></span>Electron</span>
+        <span class="pill"><span class="mdi mdi-android"></span>Capacitor</span>
+        <span class="pill"><span class="mdi mdi-database"></span>SQLite</span>
+        <span class="pill"><span class="mdi mdi-google-drive"></span>Google Drive API</span>
+      </div>
+      <div class="shots">
+        <figure><a href="sgfp/img/sgfp-inicio.webp" target="_blank" rel="noopener"><img src="sgfp/img/sgfp-inicio.webp" width="360" height="779" loading="lazy" alt="Pantalla de inicio de SGFP con ingresos, gastos y balance del mes"></a><figcaption>Inicio</figcaption></figure>
+        <figure><a href="sgfp/img/sgfp-movimientos.webp" target="_blank" rel="noopener"><img src="sgfp/img/sgfp-movimientos.webp" width="360" height="779" loading="lazy" alt="Lista de movimientos agrupados por día"></a><figcaption>Movimientos</figcaption></figure>
+        <figure><a href="sgfp/img/sgfp-metas.webp" target="_blank" rel="noopener"><img src="sgfp/img/sgfp-metas.webp" width="360" height="779" loading="lazy" alt="Metas y alertas de gasto con barras de progreso"></a><figcaption>Metas</figcaption></figure>
+        <figure><a href="sgfp/img/sgfp-deudas.webp" target="_blank" rel="noopener"><img src="sgfp/img/sgfp-deudas.webp" width="360" height="779" loading="lazy" alt="Tarjeta de crédito con su límite y crédito disponible"></a><figcaption>Deudas</figcaption></figure>
+        <figure><a href="sgfp/img/sgfp-reportes.webp" target="_blank" rel="noopener"><img src="sgfp/img/sgfp-reportes.webp" width="360" height="779" loading="lazy" alt="Reportes y gráficas de gastos"></a><figcaption>Reportes</figcaption></figure>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="sgfp/">Ver proyecto</a>
+        <a class="btn btn-ghost" href="sgfp/privacidad.html">Política de privacidad</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-num">02</span>
       <h2>Sobre mí</h2>
       <div class="rule"></div>
     </div>
@@ -474,7 +534,7 @@
 <section id="sectors">
   <div class="container">
     <div class="section-head">
-      <span class="section-num">02</span>
+      <span class="section-num">03</span>
       <h2>Sectores donde he trabajado</h2>
       <div class="rule"></div>
     </div>
@@ -501,7 +561,7 @@
 <section id="stack">
   <div class="container">
     <div class="section-head">
-      <span class="section-num">03</span>
+      <span class="section-num">04</span>
       <h2>Stack técnico</h2>
       <div class="rule"></div>
     </div>
@@ -564,7 +624,7 @@
 <section id="contact">
   <div class="container">
     <div class="section-head">
-      <span class="section-num">04</span>
+      <span class="section-num">05</span>
       <h2>Contacto</h2>
       <div class="rule"></div>
     </div>
