@@ -1,86 +1,68 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="l-es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SGFP – Sistema de Gestión Financiera Personal</title>
 <meta name="description" content="SGFP is a personal finance app for Windows and Android to track accounts, savings, debts and goals. / SGFP es una app de finanzas personales para Windows y Android.">
-<style>
-  :root { --bg:#f7f7fb; --card:#fff; --text:#1f2233; --muted:#5b6078; --accent:#4a3aa7; --line:#e3e4ee; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#14151f; --card:#1d1f2e; --text:#eceef8; --muted:#a0a5c2; --accent:#a99bff; --line:#2c2f45; } }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  h1 { font-size:2rem; margin:0 0 4px; }
-  h2 { font-size:1.2rem; margin:28px 0 8px; }
-  .sub { color:var(--muted); margin:0 0 24px; }
-  section.lang { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:8px 24px 24px; margin-bottom:20px; }
-  a { color:var(--accent); }
-  ul { padding-left:1.2em; }
-  nav a { margin-right:14px; }
-  .shots { display:flex; gap:12px; overflow-x:auto; padding:4px 2px 12px; scroll-snap-type:x mandatory; }
-  .shots figure { margin:0; flex:0 0 auto; scroll-snap-align:start; text-align:center; }
-  .shots img { display:block; width:170px; height:auto; border-radius:14px; border:1px solid var(--line); box-shadow:0 6px 18px rgba(0,0,0,.12); }
-  .shots figcaption { font-size:.8rem; color:var(--muted); margin-top:6px; }
-  footer { color:var(--muted); font-size:.9rem; margin-top:28px; }
-</style>
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0908'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23ff3344'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<main>
-  <h1>SGFP</h1>
-  <p class="sub">Sistema de Gestión Financiera Personal · Personal Finance Manager</p>
-  <nav><a href="#es">Español</a><a href="#en">English</a><a href="privacidad.html">Privacidad / Privacy</a></nav>
+<div class="glow"></div>
+<nav><div class="container">
+  <div class="crumb"><span class="dot"></span><a href="../">CAT-J</a><span>/</span><span>proyectos</span><span>/</span><b>SGFP</b></div>
+  <div class="navr"><a href="privacidad.html" class="hide"><span lang="es">Privacidad</span><span lang="en">Privacy</span></a><span class="lang"><button data-l="es" aria-pressed="true">ES</button><button data-l="en" aria-pressed="false">EN</button></span></div>
+</div></nav>
 
-  <section class="lang" aria-label="Capturas / Screenshots">
-    <h2>Capturas · Screenshots</h2>
-    <div class="shots">
-      <figure><img src="img/sgfp-inicio.webp" width="360" height="779" loading="lazy" alt="Pantalla de inicio de SGFP con ingresos, gastos y balance del mes"><figcaption>Inicio · Home</figcaption></figure>
-      <figure><img src="img/sgfp-movimientos.webp" width="360" height="779" loading="lazy" alt="Lista de movimientos agrupados por día"><figcaption>Movimientos · Transactions</figcaption></figure>
-      <figure><img src="img/sgfp-metas.webp" width="360" height="779" loading="lazy" alt="Metas y alertas de gasto con barras de progreso"><figcaption>Metas · Goals</figcaption></figure>
-      <figure><img src="img/sgfp-deudas.webp" width="360" height="779" loading="lazy" alt="Tarjeta de crédito con su límite y crédito disponible"><figcaption>Deudas · Debts</figcaption></figure>
-    </div>
-    <p style="font-size:.85rem;color:var(--muted);margin:0">Datos de ejemplo. · Sample data.</p>
-  </section>
+<header><div class="container" style="padding-top:70px;padding-bottom:30px">
+  <div class="eyebrow"><span lang="es">Proyecto destacado · Windows y Android</span><span lang="en">Featured project · Windows &amp; Android</span></div>
+  <h1>SGFP<br><span style="font-size:.45em">Gestión Financiera Personal</span></h1>
+  <p class="lead" lang="es"><strong>Tu dinero, tus deudas y tus metas en un solo lugar.</strong> Lleva tus cuentas de ahorro, lo que debes, lo que prestaste y los adelantos, con gráficas que muestran en qué se va tu dinero.</p>
+  <p class="lead" lang="en"><strong>Your money, debts and goals in one place.</strong> Track savings accounts, what you owe, what you lent and advances, with charts that show where your money goes.</p>
+  <div class="pills"><span class="pill">Windows</span><span class="pill">Android</span><span class="pill">100% <span lang="es">local</span><span lang="en">on-device</span></span><span class="pill"><span lang="es">Respaldo en Drive (opcional)</span><span lang="en">Drive backup (optional)</span></span></div>
+</div></header>
 
-  <section class="lang" id="es" lang="es">
-    <h2>¿Qué es SGFP?</h2>
-    <p>SGFP es una aplicación personal de finanzas para Windows y Android. Sirve para llevar tus cuentas de ahorro, tus movimientos de dinero, tus deudas (lo que debes, lo que prestaste y los adelantos), tus metas y alertas de gasto, con gráficas que muestran en qué se va tu dinero.</p>
-    <h2>Qué puedes hacer</h2>
-    <ul>
-      <li>Registrar ingresos, gastos y transferencias entre cuentas.</li>
-      <li>Controlar tarjetas de crédito, préstamos y pagos pendientes.</li>
-      <li>Poner metas y límites de gasto, y recibir avisos al acercarte.</li>
-      <li>Ver reportes y gráficas, y exportarlos.</li>
-      <li>Sincronizar la PC y el celular y guardar copias de seguridad.</li>
-    </ul>
-    <h2>Copia de seguridad en Google Drive (opcional)</h2>
-    <p>Si lo activas, SGFP te pide iniciar sesión con tu cuenta de Google y guarda copias de seguridad en una <strong>carpeta oculta de la aplicación</strong> dentro de tu propio Drive. SGFP solo puede ver lo que él mismo guardó allí; no puede leer ni modificar el resto de tus archivos. Puedes desconectarlo cuando quieras. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p>
-    <h2>Tus datos</h2>
-    <p>Tus datos financieros viven en tu propio dispositivo. No se envían a servidores del desarrollador.</p>
-    <h2>Contacto</h2>
-    <p><a href="mailto:christian.terrones22@outlook.com">christian.terrones22@outlook.com</a></p>
-  </section>
+<section style="padding-top:20px"><div class="container">
+  <h2><span class="n">01</span><span lang="es">Capturas</span><span lang="en">Screenshots</span></h2>
+  <div class="shots"><figure><a href="img/sgfp-inicio.webp"><img src="img/sgfp-inicio.webp" width="360" height="779" alt="Pantalla de inicio de SGFP con ingresos, gastos y balance del mes"></a><figcaption><span lang="es">Inicio</span><span lang="en">Home</span></figcaption></figure><figure><a href="img/sgfp-movimientos.webp"><img src="img/sgfp-movimientos.webp" width="360" height="779" alt="Lista de movimientos agrupados por día"></a><figcaption><span lang="es">Movimientos</span><span lang="en">Transactions</span></figcaption></figure><figure><a href="img/sgfp-metas.webp"><img src="img/sgfp-metas.webp" width="360" height="779" alt="Metas y alertas de gasto con barras de progreso"></a><figcaption><span lang="es">Metas</span><span lang="en">Goals</span></figcaption></figure><figure><a href="img/sgfp-deudas.webp"><img src="img/sgfp-deudas.webp" width="360" height="779" alt="Tarjeta de crédito con su límite y crédito disponible"></a><figcaption><span lang="es">Deudas</span><span lang="en">Debts</span></figcaption></figure><figure><a href="img/sgfp-reportes.webp"><img src="img/sgfp-reportes.webp" width="360" height="779" alt="Reportes y gráficas de gastos"></a><figcaption><span lang="es">Reportes</span><span lang="en">Reports</span></figcaption></figure></div>
+  <p class="note"><span lang="es">Datos de ejemplo.</span><span lang="en">Sample data.</span></p>
+</div></section>
 
-  <section class="lang" id="en" lang="en">
-    <h2>What is SGFP?</h2>
-    <p>SGFP is a personal finance app for Windows and Android. It helps you keep track of your savings accounts, money movements, debts (what you owe, what you lent and advances), goals and spending alerts, with charts that show where your money goes.</p>
-    <h2>What you can do</h2>
-    <ul>
-      <li>Record income, expenses and transfers between accounts.</li>
-      <li>Manage credit cards, loans and pending payments.</li>
-      <li>Set goals and spending limits, and get alerts as you approach them.</li>
-      <li>View and export reports and charts.</li>
-      <li>Sync your PC and phone and keep backups.</li>
-    </ul>
-    <h2>Google Drive backup (optional)</h2>
-    <p>If you turn it on, SGFP asks you to sign in with your Google account and stores backups in a <strong>hidden application folder</strong> inside your own Drive. SGFP can only see what it saved there; it cannot read or modify any of your other files. You can disconnect at any time. See the <a href="privacidad.html">privacy policy</a> for details.</p>
-    <h2>Your data</h2>
-    <p>Your financial data lives on your own device. It is not sent to the developer's servers.</p>
-    <h2>Contact</h2>
-    <p><a href="mailto:christian.terrones22@outlook.com">christian.terrones22@outlook.com</a></p>
-  </section>
+<section><div class="container">
+  <h2><span class="n">02</span><span lang="es">Qué puedes hacer</span><span lang="en">What you can do</span></h2>
+  <div class="grid">
+    <div class="cell"><div class="path">~/movimientos</div><h3 lang="es">Ingresos y gastos</h3><h3 lang="en">Income &amp; expenses</h3><p lang="es">Registra ingresos, gastos y transferencias entre cuentas.</p><p lang="en">Record income, expenses and transfers between accounts.</p></div>
+    <div class="cell"><div class="path">~/deudas</div><h3 lang="es">Deudas y tarjetas</h3><h3 lang="en">Debts &amp; cards</h3><p lang="es">Controla tarjetas de crédito, préstamos y pagos pendientes.</p><p lang="en">Manage credit cards, loans and pending payments.</p></div>
+    <div class="cell"><div class="path">~/metas</div><h3 lang="es">Metas y límites</h3><h3 lang="en">Goals &amp; limits</h3><p lang="es">Pon metas y límites de gasto y recibe avisos al acercarte.</p><p lang="en">Set goals and spending limits and get alerts as you approach them.</p></div>
+    <div class="cell"><div class="path">~/reportes</div><h3 lang="es">Reportes</h3><h3 lang="en">Reports</h3><p lang="es">Ve gráficas de tus gastos y expórtalas.</p><p lang="en">View and export charts of your spending.</p></div>
+    <div class="cell"><div class="path">~/sync</div><h3 lang="es">PC y celular</h3><h3 lang="en">PC &amp; phone</h3><p lang="es">Sincroniza tus dispositivos y guarda copias de seguridad.</p><p lang="en">Sync your devices and keep backups.</p></div>
+    <div class="cell"><div class="path">~/privado</div><h3 lang="es">Tus datos son tuyos</h3><h3 lang="en">Your data is yours</h3><p lang="es">Viven en tu dispositivo, no en servidores del desarrollador.</p><p lang="en">They live on your device, not on the developer's servers.</p></div>
+  </div>
+</div></section>
 
-  <footer>SGFP is an independent application and is not affiliated with Google. / SGFP es una aplicación independiente y no está afiliada a Google.</footer>
-</main>
+<section><div class="container">
+  <h2><span class="n">03</span><span lang="es">Copia de seguridad en Google Drive (opcional)</span><span lang="en">Google Drive backup (optional)</span></h2>
+  <div class="panel">
+    <p lang="es">Si lo activas, SGFP te pide iniciar sesión con tu cuenta de Google y guarda copias en una <strong>carpeta oculta de la aplicación</strong> dentro de tu propio Drive. SGFP solo puede ver lo que él mismo guardó allí; no puede leer ni modificar el resto de tus archivos. Puedes desconectarlo cuando quieras. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p>
+    <p lang="en">If you turn it on, SGFP asks you to sign in with your Google account and stores backups in a <strong>hidden application folder</strong> inside your own Drive. SGFP can only see what it saved there; it cannot read or modify any of your other files. You can disconnect at any time. See the <a href="privacidad.html">privacy policy</a> for details.</p>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">04</span><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
+  <div class="term"><div class="bar"><i></i><i></i><i></i><span>contacto@sgfp</span></div>
+  <div class="body"><div><span class="pr">$</span> cat contacto.txt</div><div>email ➜ <a href="mailto:christian.terrones22@outlook.com">christian.terrones22@outlook.com</a></div><div style="margin-top:14px"><a class="btn" href="../">← CAT-J</a> <a class="btn" href="privacidad.html"><span lang="es">Política de privacidad</span><span lang="en">Privacy policy</span></a></div></div></div>
+</div></section>
+
+<footer><div class="container">
+  <span lang="es">SGFP es una aplicación independiente y no está afiliada a Google. · Hecho en Panamá por <a href="../">CAT-J</a></span>
+  <span lang="en">SGFP is an independent application and is not affiliated with Google. · Built in Panama by <a href="../">CAT-J</a></span>
+</div></footer>
+<script src="lang.js"></script>
+<script src="fx.js"></script>
 </body>
 </html>
