@@ -1,12 +1,12 @@
-:root{--bg:#0a0908;--bg-panel:#130d0e;--bg-panel-2:#1b1213;--red:#e2182c;--red-bright:#ff3344;--red-deep:#5c0d14;--line:#3a1a1c;--text:#fbf6f4;--muted:#cbaeb1;--mono:'JetBrains Mono',monospace;--display:'Press Start 2P','JetBrains Mono',monospace;--body:'Inter',sans-serif}
+:root{--bg:#0a0908;--bg-panel:#140f0a;--bg-panel-2:#1d150d;--red:#f07a0a;--red-bright:#ff9a2e;--red-deep:#5c2f06;--line:#3a2512;--text:#fbf6f4;--muted:#cdb8a2;--on-accent:#1a0d02;--mono:'JetBrains Mono',monospace;--display:'Press Start 2P','JetBrains Mono',monospace;--body:'Inter',sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.65;overflow-x:hidden}
-::selection{background:var(--red);color:#fff}
+::selection{background:var(--red);color:var(--on-accent)}
 a{color:var(--red-bright);text-decoration:none}
 a:hover{color:#fff}
 a:focus-visible,button:focus-visible{outline:2px solid var(--red-bright);outline-offset:3px}
-.glow{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 80% 5%,rgba(226,24,44,.18),transparent 60%),radial-gradient(ellipse 50% 50% at 0% 100%,rgba(226,24,44,.08),transparent 60%)}
+.glow{position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 60% 40% at 80% 5%,rgba(240,122,10,.18),transparent 60%),radial-gradient(ellipse 50% 50% at 0% 100%,rgba(240,122,10,.08),transparent 60%)}
 .glow::after{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);background-size:48px 48px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 15%,#000,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 50% 15%,#000,transparent 75%)}
 .container{max-width:1000px;margin:0 auto;padding:0 28px}
 nav{position:sticky;top:0;z-index:50;background:rgba(10,9,8,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
@@ -22,7 +22,7 @@ nav .container{display:flex;align-items:center;justify-content:space-between;hei
 .lang button:first-child{border-radius:3px 0 0 3px}.lang button:last-child{border-radius:0 3px 3px 0;border-left:0}
 .eyebrow{font-family:var(--mono);font-size:12px;color:var(--red-bright);letter-spacing:2px;text-transform:uppercase;margin-bottom:16px}
 .eyebrow::before{content:'// ';color:var(--red)}
-h1{font-family:var(--display);font-weight:400;font-size:clamp(26px,5vw,48px);line-height:1.4;margin-bottom:18px;text-shadow:0 0 24px rgba(255,51,68,.45)}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(26px,5vw,48px);line-height:1.4;margin-bottom:18px;text-shadow:0 0 24px rgba(255,154,46,.45)}
 h1 span{color:var(--red-bright)}
 h2{font-family:var(--display);font-weight:400;font-size:clamp(13px,1.6vw,17px);line-height:1.8;margin-bottom:22px}
 h2 .n{font-family:var(--mono);font-size:14px;color:var(--red);margin-right:10px}
@@ -34,10 +34,10 @@ section{padding:60px 0}
 .pill{font-family:var(--mono);font-size:12px;padding:7px 13px;border:1px solid var(--line);border-radius:20px;background:var(--bg-panel-2)}
 .btn{font-family:var(--mono);font-size:13px;padding:12px 22px;border-radius:2px;border:1px solid var(--line);display:inline-block;color:var(--text);transition:.2s}
 .btn:hover{border-color:var(--red);color:var(--red-bright)}
-.btn.primary{background:var(--red);border-color:var(--red);color:#fff}.btn.primary:hover{background:var(--red-bright);box-shadow:0 0 24px rgba(255,51,68,.4)}
+.btn.primary{background:var(--red);border-color:var(--red);color:var(--on-accent)}.btn.primary:hover{background:var(--red-bright);box-shadow:0 0 24px rgba(255,154,46,.4)}
 .shots{display:flex;gap:16px;overflow-x:auto;padding:8px 4px 18px;scroll-snap-type:x mandatory}
 .shots figure{flex:none;scroll-snap-align:start;text-align:center}
-.shots img{display:block;width:190px;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 0 40px rgba(226,24,44,.14),0 14px 30px rgba(0,0,0,.6);transition:.25s}
+.shots img{display:block;width:190px;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 0 40px rgba(240,122,10,.14),0 14px 30px rgba(0,0,0,.6);transition:.25s}
 .shots img:hover{border-color:var(--red);transform:translateY(-4px)}
 .shots figcaption{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:10px}
 .note{font-family:var(--mono);font-size:11px;color:var(--muted)}
@@ -90,10 +90,10 @@ header .container>*:nth-child(5){animation-delay:.32s}
 main.legal>*{animation:subir .6s ease both}
 main.legal>*:nth-child(2){animation-delay:.08s}
 main.legal>*:nth-child(3){animation-delay:.16s}
-@keyframes brillo{0%,100%{text-shadow:0 0 18px rgba(255,51,68,.35)}50%{text-shadow:0 0 34px rgba(255,51,68,.75)}}
+@keyframes brillo{0%,100%{text-shadow:0 0 18px rgba(255,154,46,.35)}50%{text-shadow:0 0 34px rgba(255,154,46,.75)}}
 h1{animation:brillo 4s ease-in-out infinite}
 header .container>h1{animation:subir .7s ease .08s both,brillo 4s ease-in-out .8s infinite}
-@keyframes latido{70%{box-shadow:0 0 0 8px rgba(255,51,68,0)}100%{box-shadow:0 0 0 0 rgba(255,51,68,0)}}
+@keyframes latido{70%{box-shadow:0 0 0 8px rgba(255,154,46,0)}100%{box-shadow:0 0 0 0 rgba(255,154,46,0)}}
 .crumb .dot{animation:latido 2.2s infinite}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -103,7 +103,7 @@ header .container>h1{animation:subir .7s ease .08s both,brillo 4s ease-in-out .8
 .pill{transition:border-color .2s,color .2s,transform .2s}
 .pill:hover{border-color:var(--red);color:var(--red-bright);transform:translateY(-2px)}
 .panel{transition:border-color .25s,box-shadow .25s}
-.panel:hover{border-color:var(--red-deep);box-shadow:0 0 30px rgba(226,24,44,.12)}
+.panel:hover{border-color:var(--red-deep);box-shadow:0 0 30px rgba(240,122,10,.12)}
 .cursor{display:inline-block;width:8px;height:15px;background:var(--red-bright);vertical-align:middle;margin-left:4px;animation:parpadeo 1s steps(1) infinite}
 @keyframes parpadeo{50%{opacity:0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}

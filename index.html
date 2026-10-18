@@ -22,6 +22,7 @@
     --red:#e2182c;
     --red-bright:#ff3344;
     --red-deep:#5c0d14;
+    --glow:255,51,68;
     --line:#3a1a1c;
     --text:#fbf6f4;
     --text-muted:#cbaeb1;
@@ -163,7 +164,7 @@
   }
   .btn-primary:hover{
     background:var(--red-bright);
-    box-shadow:0 0 24px rgba(255,51,68,0.4);
+    box-shadow:0 0 24px rgba(var(--glow),0.4);
     transform:translateY(-1px);
   }
   .btn-ghost{color:var(--text);}
@@ -515,6 +516,13 @@
   @keyframes abrir{from{opacity:0; transform:translateY(-6px);}to{opacity:1; transform:none;}}
   /* Fix: la etiqueta de la terminal heredaba el tamaño de los circulitos */
   .terminal-bar .label{width:auto; height:auto; border-radius:0; background:none; white-space:nowrap;}
+
+  /* Color de acento propio de cada proyecto (el resto del sitio mantiene el rojo) */
+  #proj-sgfp{--red:#6c5ce7; --red-bright:#8b7dff; --red-deep:#261c66; --line:#231d45; --bg-panel:#0f0d1a; --bg-panel-2:#171428; --text-muted:#b7b1d6; --glow:139,125,255; --on-accent:#fff;}
+  #proj-lumio{--red:#e8a317; --red-bright:#ffc93c; --red-deep:#5c4208; --line:#3a2f14; --bg-panel:#14110a; --bg-panel-2:#1d180e; --text-muted:#d1c4a4; --glow:255,201,60; --on-accent:#1a1204;}
+  #proj-duosound{--red:#f07a0a; --red-bright:#ff9a2e; --red-deep:#5c2f06; --line:#3a2512; --bg-panel:#140f0a; --bg-panel-2:#1d150d; --text-muted:#cdb8a2; --glow:255,154,46; --on-accent:#1a0d02;}
+  #proj-portal{--red:#bc891f; --red-bright:#e0a93a; --red-deep:#0c3d6d; --line:#1b3250; --bg-panel:#0a111a; --bg-panel-2:#0f1a28; --text-muted:#b5c0cf; --glow:224,169,58; --on-accent:#120c02;}
+  #projects .btn-primary{color:var(--on-accent,#fff);}
 </style>
 </head>
 <body>
