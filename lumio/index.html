@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es" class="l-es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumio – Entorno de desarrollo local para Windows</title>
+<meta name="description" content="Lumio is a Windows desktop app that serves local PHP, Laravel, Node and static sites on .test domains with HTTPS, with built-in databases and internet sharing. / Lumio es una app de escritorio para Windows que sirve sitios locales PHP, Laravel, Node y estáticos en dominios .test con HTTPS.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0908'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23ff3344'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="glow"></div>
+<nav><div class="container">
+  <div class="crumb"><span class="dot"></span><a href="../">CAT-J</a><span>/</span><span>proyectos</span><span>/</span><b>Lumio</b></div>
+  <div class="navr"><span class="lang"><button data-l="es" aria-pressed="true">ES</button><button data-l="en" aria-pressed="false">EN</button></span></div>
+</div></nav>
+
+<header><div class="container" style="padding-top:70px;padding-bottom:30px">
+  <div class="eyebrow"><span lang="es">Proyecto · Herramienta de desarrollo para Windows</span><span lang="en">Project · Developer tool for Windows</span></div>
+  <h1>Lumio<br><span style="font-size:.45em"><span lang="es">Entorno de desarrollo local</span><span lang="en">Local development environment</span></span></h1>
+  <p class="lead" lang="es"><strong>Tus sitios locales, listos en un clic.</strong> Sirve proyectos PHP, Laravel, Node y estáticos en dominios <code>.test</code> con HTTPS, con bases de datos y enlaces para compartir por internet, sin configurar nada a mano.</p>
+  <p class="lead" lang="en"><strong>Your local sites, ready in one click.</strong> Serve PHP, Laravel, Node and static projects on <code>.test</code> domains with HTTPS, with built-in databases and links to share over the internet, with no manual setup.</p>
+  <div class="pills"><span class="pill">Windows</span><span class="pill">Electron</span><span class="pill">Vue 3</span><span class="pill">TypeScript</span><span class="pill">Caddy</span><span class="pill">Cloudflare Tunnel</span></div>
+</div></header>
+
+<section style="padding-top:20px"><div class="container">
+  <h2><span class="n">01</span><span lang="es">Capturas</span><span lang="en">Screenshots</span></h2>
+  <div class="shots wide"><figure><a href="img/lumio-sitios.webp"><img src="img/lumio-sitios.webp" width="1280" height="860" alt="Lista de sitios locales con el detalle de uno de ellos, su vista previa y el enlace para compartirlo"></a><figcaption><span lang="es">Sitios</span><span lang="en">Sites</span></figcaption></figure><figure><a href="img/lumio-servidor.webp"><img src="img/lumio-servidor.webp" width="1280" height="860" alt="Servidor web y HTTPS local con certificado de confianza"></a><figcaption><span lang="es">Servidor y HTTPS</span><span lang="en">Server &amp; HTTPS</span></figcaption></figure><figure><a href="img/lumio-servicios.webp"><img src="img/lumio-servicios.webp" width="1280" height="860" alt="Bases de datos locales con sus datos de conexión"></a><figcaption><span lang="es">Servicios</span><span lang="en">Services</span></figcaption></figure><figure><a href="img/lumio-php.webp"><img src="img/lumio-php.webp" width="1280" height="860" alt="Versiones de PHP instaladas y disponibles para instalar"></a><figcaption><span lang="es">Versiones de PHP</span><span lang="en">PHP versions</span></figcaption></figure><figure><a href="img/lumio-ajustes.webp"><img src="img/lumio-ajustes.webp" width="1280" height="860" alt="Ajustes: PATH de la terminal, actualizaciones y opción para quitar Lumio"></a><figcaption><span lang="es">Ajustes</span><span lang="en">Settings</span></figcaption></figure></div>
+  <p class="note"><span lang="es">Datos de ejemplo.</span><span lang="en">Sample data.</span></p>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">02</span><span lang="es">Qué puedes hacer</span><span lang="en">What you can do</span></h2>
+  <div class="grid">
+    <div class="cell"><div class="path">~/sitios</div><h3 lang="es">Sitios con HTTPS</h3><h3 lang="en">Sites with HTTPS</h3><p lang="es">Agrega la carpeta de un proyecto y queda disponible en <code>nombre.test</code>, con candado y vista previa.</p><p lang="en">Add a project folder and it is available at <code>name.test</code>, with a padlock and a live preview.</p></div>
+    <div class="cell"><div class="path">~/versiones</div><h3 lang="es">PHP y Node a tu medida</h3><h3 lang="en">PHP &amp; Node your way</h3><p lang="es">Instala varias versiones y elige cuál usa cada sitio, además de Composer.</p><p lang="en">Install several versions and choose which one each site uses, plus Composer.</p></div>
+    <div class="cell"><div class="path">~/servicios</div><h3 lang="es">Bases de datos</h3><h3 lang="en">Databases</h3><p lang="es">MariaDB, MySQL y PostgreSQL locales, cada una en su puerto y con sus datos aparte.</p><p lang="en">Local MariaDB, MySQL and PostgreSQL, each on its own port with separate data.</p></div>
+    <div class="cell"><div class="path">~/internet</div><h3 lang="es">Compartir por internet</h3><h3 lang="en">Share over the internet</h3><p lang="es">Genera un enlace temporal con Cloudflare Tunnel para enseñar un sitio a un cliente.</p><p lang="en">Create a temporary Cloudflare Tunnel link to show a site to a client.</p></div>
+    <div class="cell"><div class="path">~/terminal</div><h3 lang="es">Terminal y editor</h3><h3 lang="en">Terminal &amp; editor</h3><p lang="es">Abre el sitio en tu editor o en una terminal, y usa <code>php</code>, <code>node</code> y <code>composer</code> desde cualquier consola.</p><p lang="en">Open a site in your editor or a terminal, and use <code>php</code>, <code>node</code> and <code>composer</code> from any console.</p></div>
+    <div class="cell"><div class="path">~/limpio</div><h3 lang="es">Se quita sin dejar rastro</h3><h3 lang="en">Leaves no trace</h3><p lang="es">Quitar Lumio revierte los cambios que hizo en el equipo y se actualiza solo.</p><p lang="en">Removing Lumio reverts the changes it made to the computer, and it updates itself.</p></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">03</span><span lang="es">Qué cambia en tu equipo</span><span lang="en">What it changes on your computer</span></h2>
+  <div class="panel">
+    <p lang="es">Para que <code>.test</code> y el candado funcionen, Lumio registra los dominios de tus sitios en el archivo hosts, instala un certificado local de confianza y, si lo pides, añade sus carpetas al PATH de tu usuario. Todo se puede deshacer desde <strong>Ajustes → Quitar Lumio</strong>, que además limpia al desinstalar. Las descargas de PHP se verifican con SHA-256.</p>
+    <p lang="en">For <code>.test</code> and the padlock to work, Lumio registers your sites' domains in the hosts file, installs a trusted local certificate and, if you ask, adds its folders to your user PATH. Everything can be undone from <strong>Settings → Remove Lumio</strong>, which also cleans up on uninstall. PHP downloads are verified with SHA-256.</p>
+    <p lang="es">Lumio nace como herramienta interna de BrightTech Solutions, el equipo con el que desarrollo.</p>
+    <p lang="en">Lumio started as an internal tool at BrightTech Solutions, the team I build software with.</p>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">04</span><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
+  <div class="term"><div class="bar"><i></i><i></i><i></i><span>contacto@lumio</span></div>
+  <div class="body"><div><span class="pr">$</span> cat contacto.txt</div><div>email ➜ <a href="mailto:christian.terrones22@outlook.com">christian.terrones22@outlook.com</a></div><div style="margin-top:14px"><a class="btn" href="../">← CAT-J</a></div></div></div>
+</div></section>
+
+<footer><div class="container">
+  <span lang="es">Lumio es una aplicación independiente y no está afiliada a Laravel Herd ni a Cloudflare. · Hecho en Panamá por <a href="../">CAT-J</a></span>
+  <span lang="en">Lumio is an independent application and is not affiliated with Laravel Herd or Cloudflare. · Built in Panama by <a href="../">CAT-J</a></span>
+</div></footer>
+<script src="lang.js"></script>
+<script src="fx.js"></script>
+</body>
+</html>

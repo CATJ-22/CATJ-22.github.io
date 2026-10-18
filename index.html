@@ -485,6 +485,9 @@
   .shots::-webkit-scrollbar-track{background:var(--bg-panel-2); border-radius:8px;}
   .shots::-webkit-scrollbar-thumb{background:var(--red); border-radius:8px; border:0;}
   .shots img{aspect-ratio:360/779; background:var(--bg-panel-2);}
+  .shots.wide img{width:260px; aspect-ratio:1280/860;}
+  .project-body code{font-family:var(--mono); font-size:.9em; color:var(--red);}
+  @media (max-width:700px){.shots.wide img{width:220px;}}
   .navlinks a{position:relative; padding:6px 0;}
   .navlinks a::after{content:''; position:absolute; left:0; right:0; bottom:0; height:2px; background:var(--red-bright); box-shadow:0 0 8px var(--red-bright); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;}
   .navlinks a:hover::after, .navlinks a.active::after{transform:scaleX(1);}
@@ -597,6 +600,42 @@
       <div class="project-links">
         <a class="btn btn-primary" href="sgfp/">Ver proyecto</a>
         <a class="btn btn-ghost" href="sgfp/privacidad.html">Política de privacidad</a>
+      </div>
+      </div>
+    </details>
+
+    <details class="project reveal" id="proj-lumio">
+      <summary>
+        <div class="ribbon">Herramienta de desarrollo · Windows</div>
+        <div class="project-top">
+        <h3>Lumio · Entorno de desarrollo local</h3>
+        <span class="path">~/proyectos/lumio</span>
+      </div>
+        <p class="project-sum">Sitios locales PHP, Node y estáticos en dominios .test con HTTPS, bases de datos y enlaces para compartir.</p>
+        <div class="pill-row">
+        <span class="pill"><span class="mdi mdi-desktop-classic"></span>Electron</span>
+        <span class="pill"><span class="mdi mdi-vuejs"></span>Vue 3</span>
+        <span class="pill"><span class="mdi mdi-language-typescript"></span>TypeScript</span>
+        <span class="pill"><span class="mdi mdi-server-network"></span>Caddy</span>
+        <span class="pill"><span class="mdi mdi-cloud-outline"></span>Cloudflare Tunnel</span>
+      </div>
+        <span class="project-toggle" aria-hidden="true"><span class="more">Ver detalles</span><span class="less">Ocultar detalles</span><i class="chev">▾</i></span>
+      </summary>
+      <div class="project-body">
+      <p>Aplicación de escritorio para <strong>Windows</strong> que sirve tus proyectos <strong>PHP, Laravel, Node y estáticos</strong> en dominios <code>.test</code> con HTTPS, con varias versiones de PHP y Node, bases de datos locales y enlaces temporales para compartir un sitio por internet.</p>
+      <ul class="project-list">
+        <li>Un clic para servir una carpeta: elige la versión de PHP o Node de cada sitio.</li>
+        <li>Se actualiza sola y, al quitarla, revierte los cambios que hizo en el equipo.</li>
+      </ul>
+      <div class="shots wide">
+        <figure><a href="lumio/img/lumio-sitios.webp" target="_blank" rel="noopener"><img src="lumio/img/lumio-sitios.webp" width="1280" height="860" alt="Lista de sitios locales con el detalle de uno de ellos, su vista previa y el enlace para compartirlo"></a><figcaption>Sitios</figcaption></figure>
+        <figure><a href="lumio/img/lumio-servidor.webp" target="_blank" rel="noopener"><img src="lumio/img/lumio-servidor.webp" width="1280" height="860" alt="Servidor web y HTTPS local con certificado de confianza"></a><figcaption>Servidor</figcaption></figure>
+        <figure><a href="lumio/img/lumio-servicios.webp" target="_blank" rel="noopener"><img src="lumio/img/lumio-servicios.webp" width="1280" height="860" alt="Bases de datos locales con sus datos de conexión"></a><figcaption>Servicios</figcaption></figure>
+        <figure><a href="lumio/img/lumio-php.webp" target="_blank" rel="noopener"><img src="lumio/img/lumio-php.webp" width="1280" height="860" alt="Versiones de PHP instaladas y disponibles para instalar"></a><figcaption>PHP</figcaption></figure>
+        <figure><a href="lumio/img/lumio-ajustes.webp" target="_blank" rel="noopener"><img src="lumio/img/lumio-ajustes.webp" width="1280" height="860" alt="Ajustes: PATH de la terminal, actualizaciones y opción para quitar Lumio"></a><figcaption>Ajustes</figcaption></figure>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="lumio/">Ver proyecto</a>
       </div>
       </div>
     </details>
@@ -904,14 +943,14 @@
     ['.hero-stats div:nth-child(2)','<b>Web · PC · Mobile</b>platforms'],
     ['.hero-stats div:nth-child(3)','<b>PA</b>from Panama'],
     ['#projects h2','Projects'],
-    ['.project .ribbon',['★ Featured project · in active development','Institutional website']],
-    ['.project-body > p',['Personal finance app for <strong>Windows and Android</strong>: savings accounts, transactions, debts (what I owe, what I lent and advances), goals and spending alerts, with charts that show where the money goes.','Institutional website with <strong>news, videos, directory, agenda and public documents</strong>, managed from a panel designed for non-technical people.']],
-    ['.project-sum',['Personal finance for Windows and Android: accounts, debts, goals and charts.','Institutional site with news, videos, directory and agenda, managed from a panel.']],
+    ['.project .ribbon',['★ Featured project · in active development','Developer tool · Windows','Institutional website']],
+    ['.project-body > p',['Personal finance app for <strong>Windows and Android</strong>: savings accounts, transactions, debts (what I owe, what I lent and advances), goals and spending alerts, with charts that show where the money goes.','Desktop app for <strong>Windows</strong> that serves your <strong>PHP, Laravel, Node and static</strong> projects on <code>.test</code> domains with HTTPS, with several PHP and Node versions, local databases and temporary links to share a site over the internet.','Institutional website with <strong>news, videos, directory, agenda and public documents</strong>, managed from a panel designed for non-technical people.']],
+    ['.project-sum',['Personal finance for Windows and Android: accounts, debts, goals and charts.','Local PHP, Node and static sites on .test domains with HTTPS, databases and shareable links.','Institutional site with news, videos, directory and agenda, managed from a panel.']],
     ['.project-toggle .more','View details'],
     ['.project-toggle .less','Hide details'],
-    ['.project-list li',['Desktop and mobile versions that work together, with backup and sync between devices.','Goals and spending limits with alerts before you go over.','Site structure defined from the panel, no code needed.','Content management by users with permissions based on their role.']],
-    ['.shots figcaption',['Home','Transactions','Goals','Debts','Reports']],
-    ['.project-links a',['View project','Privacy policy','View project']],
+    ['.project-list li',['Desktop and mobile versions that work together, with backup and sync between devices.','Goals and spending limits with alerts before you go over.','One click to serve a folder: pick the PHP or Node version for each site.','It updates itself and, when removed, reverts the changes it made to the computer.','Site structure defined from the panel, no code needed.','Content management by users with permissions based on their role.']],
+    ['.shots figcaption',['Home','Transactions','Goals','Debts','Reports','Sites','Server','Services','PHP','Settings']],
+    ['.project-links a',['View project','Privacy policy','View project','View project']],
     ['#about h2','About me'],
     ['#about .about-grid p',[
       '<strong>Passionate software developer</strong> with a solid background in programming languages and agile methodologies. I specialize in innovative, scalable solutions, with proven experience in <strong>logistics, government and administration</strong> — from startups to large organizations.',
