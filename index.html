@@ -640,6 +640,41 @@
       </div>
     </details>
 
+    <details class="project reveal" id="proj-duosound">
+      <summary>
+        <div class="ribbon">Aplicación de audio · Windows</div>
+        <div class="project-top">
+        <h3>DuoSound · Monitores como parlantes</h3>
+        <span class="path">~/proyectos/duosound</span>
+      </div>
+        <p class="project-sum">Usa tus dos monitores como parlantes izquierdo y derecho, con volumen extra, nivelador y asistente de calibración.</p>
+        <div class="pill-row">
+        <span class="pill"><span class="mdi mdi-language-csharp"></span>C#</span>
+        <span class="pill"><span class="mdi mdi-microsoft"></span>.NET 8 · WPF</span>
+        <span class="pill"><span class="mdi mdi-waveform"></span>NAudio</span>
+        <span class="pill"><span class="mdi mdi-speaker"></span>WASAPI</span>
+      </div>
+        <span class="project-toggle" aria-hidden="true"><span class="more">Ver detalles</span><span class="less">Ocultar detalles</span><i class="chev">▾</i></span>
+      </summary>
+      <div class="project-body">
+      <p>Aplicación de bandeja para <strong>Windows</strong> que toma el audio del sistema y lo reparte entre tus <strong>dos monitores</strong> como parlantes estéreo, con <strong>volumen extra</strong>, un limitador de dos bandas, sincronía ajustable y un asistente de calibración.</p>
+      <ul class="project-list">
+        <li>Sigue el volumen y el silencio de Windows, y puede iniciar con el sistema en la bandeja.</li>
+        <li>Modo de baja latencia opcional; requiere VB-Cable, que se instala aparte.</li>
+      </ul>
+      <div class="shots wide">
+        <figure><a href="duosound/img/duosound-mezcla.webp" target="_blank" rel="noopener"><img src="duosound/img/duosound-mezcla.webp" width="1280" height="860" alt="Mezcla con el botón de encendido, la onda en vivo, los medidores izquierdo y derecho y las perillas de volumen"></a><figcaption>Mezcla</figcaption></figure>
+        <figure><a href="duosound/img/duosound-dispositivos.webp" target="_blank" rel="noopener"><img src="duosound/img/duosound-dispositivos.webp" width="1280" height="860" alt="Elección del cable virtual y de los monitores izquierdo y derecho"></a><figcaption>Dispositivos</figcaption></figure>
+        <figure><a href="duosound/img/duosound-sincronia.webp" target="_blank" rel="noopener"><img src="duosound/img/duosound-sincronia.webp" width="1280" height="860" alt="Ajuste de sincronía entre monitores y tono de prueba"></a><figcaption>Sincronía</figcaption></figure>
+        <figure><a href="duosound/img/duosound-sistema.webp" target="_blank" rel="noopener"><img src="duosound/img/duosound-sistema.webp" width="1280" height="860" alt="Opciones de inicio con Windows y bandeja"></a><figcaption>Sistema</figcaption></figure>
+        <figure><a href="duosound/img/duosound-asistente.webp" target="_blank" rel="noopener"><img src="duosound/img/duosound-asistente.webp" width="1280" height="860" alt="Asistente de calibración en el paso de sincronía"></a><figcaption>Asistente</figcaption></figure>
+      </div>
+      <div class="project-links">
+        <a class="btn btn-primary" href="duosound/">Ver proyecto</a>
+      </div>
+      </div>
+    </details>
+
     <details class="project reveal" id="proj-portal">
       <summary>
         <div class="ribbon">Sitio web institucional</div>
@@ -943,14 +978,14 @@
     ['.hero-stats div:nth-child(2)','<b>Web · PC · Mobile</b>platforms'],
     ['.hero-stats div:nth-child(3)','<b>PA</b>from Panama'],
     ['#projects h2','Projects'],
-    ['.project .ribbon',['★ Featured project · in active development','Developer tool · Windows','Institutional website']],
-    ['.project-body > p',['Personal finance app for <strong>Windows and Android</strong>: savings accounts, transactions, debts (what I owe, what I lent and advances), goals and spending alerts, with charts that show where the money goes.','Desktop app for <strong>Windows</strong> that serves your <strong>PHP, Laravel, Node and static</strong> projects on <code>.test</code> domains with HTTPS, with several PHP and Node versions, local databases and temporary links to share a site over the internet.','Institutional website with <strong>news, videos, directory, agenda and public documents</strong>, managed from a panel designed for non-technical people.']],
-    ['.project-sum',['Personal finance for Windows and Android: accounts, debts, goals and charts.','Local PHP, Node and static sites on .test domains with HTTPS, databases and shareable links.','Institutional site with news, videos, directory and agenda, managed from a panel.']],
+    ['.project .ribbon',['★ Featured project · in active development','Developer tool · Windows','Audio app · Windows','Institutional website']],
+    ['.project-body > p',['Personal finance app for <strong>Windows and Android</strong>: savings accounts, transactions, debts (what I owe, what I lent and advances), goals and spending alerts, with charts that show where the money goes.','Desktop app for <strong>Windows</strong> that serves your <strong>PHP, Laravel, Node and static</strong> projects on <code>.test</code> domains with HTTPS, with several PHP and Node versions, local databases and temporary links to share a site over the internet.','Windows tray app that takes system audio and splits it between your <strong>two monitors</strong> as stereo speakers, with <strong>extra volume</strong>, a two-band limiter, adjustable sync and a calibration wizard.','Institutional website with <strong>news, videos, directory, agenda and public documents</strong>, managed from a panel designed for non-technical people.']],
+    ['.project-sum',['Personal finance for Windows and Android: accounts, debts, goals and charts.','Local PHP, Node and static sites on .test domains with HTTPS, databases and shareable links.','Use your two monitors as left and right speakers, with extra volume, a leveler and a calibration wizard.','Institutional site with news, videos, directory and agenda, managed from a panel.']],
     ['.project-toggle .more','View details'],
     ['.project-toggle .less','Hide details'],
-    ['.project-list li',['Desktop and mobile versions that work together, with backup and sync between devices.','Goals and spending limits with alerts before you go over.','One click to serve a folder: pick the PHP or Node version for each site.','It updates itself and, when removed, reverts the changes it made to the computer.','Site structure defined from the panel, no code needed.','Content management by users with permissions based on their role.']],
-    ['.shots figcaption',['Home','Transactions','Goals','Debts','Reports','Sites','Server','Services','PHP','Settings']],
-    ['.project-links a',['View project','Privacy policy','View project','View project']],
+    ['.project-list li',['Desktop and mobile versions that work together, with backup and sync between devices.','Goals and spending limits with alerts before you go over.','One click to serve a folder: pick the PHP or Node version for each site.','It updates itself and, when removed, reverts the changes it made to the computer.','It follows Windows volume and mute, and can start with the system in the tray.','Optional low-latency mode; requires VB-Cable, installed separately.','Site structure defined from the panel, no code needed.','Content management by users with permissions based on their role.']],
+    ['.shots figcaption',['Home','Transactions','Goals','Debts','Reports','Sites','Server','Services','PHP','Settings','Mix','Devices','Sync','System','Wizard']],
+    ['.project-links a',['View project','Privacy policy','View project','View project','View project']],
     ['#about h2','About me'],
     ['#about .about-grid p',[
       '<strong>Passionate software developer</strong> with a solid background in programming languages and agile methodologies. I specialize in innovative, scalable solutions, with proven experience in <strong>logistics, government and administration</strong> — from startups to large organizations.',

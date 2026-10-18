@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es" class="l-es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuoSound – Tus dos monitores como parlantes estéreo</title>
+<meta name="description" content="DuoSound is a Windows tray app that uses your two monitors as left and right speakers, with extra volume, a leveler and a calibration wizard. / DuoSound es una app de bandeja para Windows que usa tus dos monitores como parlantes izquierdo y derecho.">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0908'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23ff3344'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="theme.css">
+</head>
+<body>
+<div class="glow"></div>
+<nav><div class="container">
+  <div class="crumb"><span class="dot"></span><a href="../">CAT-J</a><span>/</span><span>proyectos</span><span>/</span><b>DuoSound</b></div>
+  <div class="navr"><span class="lang"><button data-l="es" aria-pressed="true">ES</button><button data-l="en" aria-pressed="false">EN</button></span></div>
+</div></nav>
+
+<header><div class="container" style="padding-top:70px;padding-bottom:30px">
+  <div class="eyebrow"><span lang="es">Proyecto · Aplicación de audio para Windows</span><span lang="en">Project · Audio app for Windows</span></div>
+  <h1>DuoSound<br><span style="font-size:.45em"><span lang="es">Monitores como parlantes</span><span lang="en">Monitors as speakers</span></span></h1>
+  <p class="lead" lang="es"><strong>Tus dos monitores, un sistema de sonido.</strong> DuoSound toma el audio de Windows y lo reparte entre el monitor izquierdo y el derecho como parlantes estéreo, con volumen extra y sincronía ajustable, desde la bandeja del sistema.</p>
+  <p class="lead" lang="en"><strong>Your two monitors, one sound system.</strong> DuoSound takes Windows audio and splits it between the left and right monitor as stereo speakers, with extra volume and adjustable sync, from the system tray.</p>
+  <div class="pills"><span class="pill">Windows</span><span class="pill">C#</span><span class="pill">.NET 8</span><span class="pill">WPF</span><span class="pill">NAudio</span><span class="pill">WASAPI</span></div>
+</div></header>
+
+<section style="padding-top:20px"><div class="container">
+  <h2><span class="n">01</span><span lang="es">Capturas</span><span lang="en">Screenshots</span></h2>
+  <div class="shots wide"><figure><a href="img/duosound-mezcla.webp"><img src="img/duosound-mezcla.webp" width="1280" height="860" alt="Mezcla con el botón de encendido, la onda en vivo, los medidores izquierdo y derecho y las perillas de volumen"></a><figcaption><span lang="es">Mezcla</span><span lang="en">Mezcla</span></figcaption></figure><figure><a href="img/duosound-dispositivos.webp"><img src="img/duosound-dispositivos.webp" width="1280" height="860" alt="Elección del cable virtual y de los monitores izquierdo y derecho"></a><figcaption><span lang="es">Dispositivos</span><span lang="en">Devices</span></figcaption></figure><figure><a href="img/duosound-sincronia.webp"><img src="img/duosound-sincronia.webp" width="1280" height="860" alt="Ajuste de sincronía entre monitores y tono de prueba"></a><figcaption><span lang="es">Sincronía</span><span lang="en">Sync</span></figcaption></figure><figure><a href="img/duosound-sistema.webp"><img src="img/duosound-sistema.webp" width="1280" height="860" alt="Opciones de inicio con Windows y bandeja"></a><figcaption><span lang="es">Sistema</span><span lang="en">System</span></figcaption></figure><figure><a href="img/duosound-asistente.webp"><img src="img/duosound-asistente.webp" width="1280" height="860" alt="Asistente de calibración en el paso de sincronía"></a><figcaption><span lang="es">Asistente</span><span lang="en">Wizard</span></figcaption></figure></div>
+  <p class="note"><span lang="es">Datos de ejemplo. Imágenes generadas a partir del diseño de la interfaz.</span><span lang="en">Sample data. Images rendered from the interface design.</span></p>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">02</span><span lang="es">Qué puedes hacer</span><span lang="en">What you can do</span></h2>
+  <div class="grid">
+    <div class="cell"><div class="path">~/estereo</div><h3 lang="es">Un monitor por lado</h3><h3 lang="en">One monitor per side</h3><p lang="es">Cada monitor reproduce un canal. Un asistente te guía para dejar izquierda y derecha en su sitio.</p><p lang="en">Each monitor plays one channel. A wizard guides you to put left and right in the right place.</p></div>
+    <div class="cell"><div class="path">~/sincronia</div><h3 lang="es">Sincronía ajustable</h3><h3 lang="en">Adjustable sync</h3><p lang="es">Compensa el retraso entre monitores con un ajuste fino, o deja que se corrija solo si uno se reinicia.</p><p lang="en">Compensate the delay between monitors with fine tuning, or let it fix itself if one restarts.</p></div>
+    <div class="cell"><div class="path">~/volumen</div><h3 lang="es">Volumen extra</h3><h3 lang="en">Extra volume</h3><p lang="es">Sube más allá del 100 % con un limitador de dos bandas que evita que los graves ahoguen las voces.</p><p lang="en">Go past 100% with a two-band limiter that keeps bass from smothering voices.</p></div>
+    <div class="cell"><div class="path">~/windows</div><h3 lang="es">Vinculado a Windows</h3><h3 lang="en">Linked to Windows</h3><p lang="es">Sigue el volumen y el silencio de Windows, con un nivelador para igualar sonidos fuertes y bajos.</p><p lang="en">Follows Windows volume and mute, with a leveler to even out loud and quiet sounds.</p></div>
+    <div class="cell"><div class="path">~/latencia</div><h3 lang="es">Baja latencia</h3><h3 lang="en">Low latency</h3><p lang="es">Modo exclusivo opcional para reducir el retraso, con margen automático para que no se corte.</p><p lang="en">Optional exclusive mode to reduce delay, with an automatic cushion to avoid dropouts.</p></div>
+    <div class="cell"><div class="path">~/bandeja</div><h3 lang="es">Siempre a mano</h3><h3 lang="en">Always at hand</h3><p lang="es">Vive en la bandeja, puede iniciar con Windows y se abre solo cuando lo necesitas.</p><p lang="en">Lives in the tray, can start with Windows and opens only when you need it.</p></div>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">03</span><span lang="es">Qué necesita</span><span lang="en">What it needs</span></h2>
+  <div class="panel">
+    <p lang="es">DuoSound necesita <strong>VB-Cable</strong> de VB-Audio, un cable de audio virtual que se instala por separado y no se distribuye con la app. Configura CABLE Input como salida de Windows y DuoSound captura ese sonido y lo envía a tus dos monitores. Funciona en Windows 10 y 11 con .NET 8.</p>
+    <p lang="en">DuoSound needs <strong>VB-Cable</strong> from VB-Audio, a virtual audio cable that is installed separately and is not distributed with the app. Set CABLE Input as the Windows output and DuoSound captures that sound and sends it to your two monitors. Works on Windows 10 and 11 with .NET 8.</p>
+  </div>
+</div></section>
+
+<section><div class="container">
+  <h2><span class="n">04</span><span lang="es">Contacto</span><span lang="en">Contact</span></h2>
+  <div class="term"><div class="bar"><i></i><i></i><i></i><span>contacto@duosound</span></div>
+  <div class="body"><div><span class="pr">$</span> cat contacto.txt</div><div>email ➜ <a href="mailto:christian.terrones22@outlook.com">christian.terrones22@outlook.com</a></div><div style="margin-top:14px"><a class="btn" href="../">← CAT-J</a></div></div></div>
+</div></section>
+
+<footer><div class="container">
+  <span lang="es">DuoSound es una aplicación independiente y no está afiliada a VB-Audio. · Hecho en Panamá por <a href="../">CAT-J</a></span>
+  <span lang="en">DuoSound is an independent application and is not affiliated with VB-Audio. · Built in Panama by <a href="../">CAT-J</a></span>
+</div></footer>
+<script src="lang.js"></script>
+<script src="fx.js"></script>
+</body>
+</html>
